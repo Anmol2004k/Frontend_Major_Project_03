@@ -1,20 +1,256 @@
-*{
+@font-face {
+    font-family: omg;
+    src: url(./NeueHaasDisplayMediu.ttf);
+}
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-     
-    
+    font-family: omg;
+
+
+
 }
 
-html, body{
+html,
+body {
     height: 100%;
-    width: 100%;   
+    width: 100%;
 }
 
-#page1{
-    height: 100vh;
+#page1 {
+    min-height: 100vh;
     width: 100%;
-    background-color: #efeae3 ;
+    background-color: #efeae3;
     position: relative;
+    padding: 0 2.8vw;
+}
+
+nav {
+    padding: 1.3vw 0vw;
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+
+#nav-p2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.4vw;
+}
+
+#nav-p2 h4 {
+    text-decoration: none;
+    position: relative;
+    padding: 8px 16px;
+    border: 1px solid rgba(0, 0, 0, 0.51);
+    border-radius: 50px;
+    font-weight: 500;
+    color: #000000bb;
+    font-size: 18px;
+    transition: all ease 0.4s;
+    overflow: hidden;
+
+
+}
+
+#nav-p2 h4::after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    border-radius: 50%;
+    left: 0;
+    bottom: -100%;
+    transition: all ease 0.4s;
+}
+
+
+#nav-p2 h4:hover::after {
+    bottom: 0;
+    border-radius: 0;
+
+}
+
+#nav-p2 h4 a {
+    text-decoration: none;
+    color: #000000bb;
+    position: relative;
+    z-index: 9;
+
+}
+
+#nav-p2 h4:hover a {
+    color: #fff;
+}
+
+#center {
+    height: 80vh;
+    width: 100%;
+    /* background-color: orange; */
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    border-bottom: 1px solid #0000003c;
+    padding-bottom: 3.3vw;
+
+}
+
+#left h3 {
+    width: 28vw;
+    font-size: 2vw;
+    line-height: 2.1vw;
+
+
+}
+
+#center h1 {
+    font-size: 10vw;
+    line-height: 8vw;
+    text-align: right;
+
+
+}
+
+#page1 video {
+    border-radius: 15px;
+    margin-top: 3.6vw;
+    width: 100%;
+    position: relative;
+}
+
+#heroShape {
+    position: absolute;
+    width: 46vw;
+    height: 30vw;
+    right: 0;
+    top: 85vh;
+    
+
+}
+
+#hero1 {
+    height: 100%;
+    width: 100%;
+    background-color: #fe320a;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+    filter: blur(20px);
+    position: absolute;
+}
+
+#hero2 {
+    height: 30vw;
+    width: 30vw;
+     background: linear-gradient(#ff2f05, #fe570a);
+    border-radius: 50%;
+    animation-name:aniime22;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    filter: blur(10px);
+    position: absolute;
+}
+
+#hero3 {
+    height: 30vw;
+    width: 30vw;
+   background: linear-gradient(#fe320a, #fe570a);
+    border-radius: 50%;
+    filter: blur(25px);
+    position: absolute;
+    animation-name: aniime;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes aniime {
+    from{
+        transform: translate(55%,-10%);
+    }
+}
+    to{
+        transform: translate(7%,10%);
+    }
+
+    @keyframes aniime22 {
+    from{
+        transform: translate(15%,8%);
+    }
+}
+    to{
+        transform: translate(-20%,30%);
+    }
+
+
+    #page2 {
+        min-height: 100vh;
+        width: 100%;
+     background-color:  #efeae3;
+     padding: 8vw 0;
+    }
+
+#mov-txt {
    
+         white-space: nowrap;
+         overflow-x: auto;
+}
+
+#mov-txt::-webkit-scrollbar{
+    display: none;
+}
+.con{
+   white-space: nowrap;
+   display: inline-block;
+    animation-name: movee;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+ 
+    
+   
+}
+    #mov-txt h1{
+        font-size: 9vw;
+        display: inline-block;
+           
+       
+    }
+
+    #gola{
+        height: 70px;
+        width: 70px;
+        border-radius: 50%;
+        background-color:#fe320a;
+         display: inline-block;
+         margin: 1vw 2vw;
+
+    }
+
+
+       @keyframes movee {
+    from{
+        transform:  translateX(0);
+    }
+
+    to{
+        transform: translateX(-100%);
+    }
+
+}
+
+#page2-botm{
+    height: 80vh;
+    width: 100%;
+    background-color: #4788a8;
 }

@@ -1,1 +1,6 @@
-console.log("Script loaded successfully.");
+const scroll = new LocomotiveScroll({
+    el: document.querySelector('#main'),
+    smooth: true
+});
+
+
