@@ -3,6 +3,18 @@
     src: url(./NeueHaasDisplayMediu.ttf);
 }
 
+@font-face {
+    font-family: omg;
+    font-weight: 100;
+    src: url(./NeueHaasDisplayLightItalic.ttf);
+}
+
+
+@font-face {
+    font-family: omg;
+    font-weight: 200;
+    src: url(./NeueHaasDisplayRoman.ttf);
+}
 * {
     margin: 0;
     padding: 0;
@@ -198,6 +210,7 @@ nav {
         width: 100%;
      background-color:  #efeae3;
      padding: 8vw 0;
+     position: relative;
     }
 
 #mov-txt {
@@ -252,5 +265,108 @@ nav {
 #page2-botm{
     height: 80vh;
     width: 100%;
-    background-color: #4788a8;
+    position: relative; 
+    z-index: 9;
+    padding: 6vw ;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
+
+#page2-botm h1{
+    font-size: 4.2vw;
+    width: 63%;
+    line-height: 4vw;
+}
+
+#bp2{
+    width: 22%;
+    
+     margin-top: 11vw;
+ 
+}
+#bp2 img{
+    width: 100%;
+    border-radius: 20px;
+    
+}
+
+#bp2 p{
+    font-weight: 200;
+    margin-top: 3vw;
+    font-size: 1vw;
+}
+
+#page2 #gooey{
+    height: 35vw;
+    width: 35vw;
+    position: absolute;
+    border-radius: 50%;
+    background-color: #fe320a;
+    background: linear-gradient(to top right, #ff3107, #ff671b);
+    top: 58%;
+    left: 25%;
+    filter: blur(20px);
+
+        animation-name: gooyey;
+    animation-duration: 4s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+
+    @keyframes  gooyey {
+    from{
+            filter: blur(20px);
+
+        transform: translate(15%,-18%) skew(0);
+    }
+}
+    to{
+            filter: blur(30px);
+
+        transform: translate(-10%,10%)  skew(-16deg);
+    }
+
+
+
+
+#page3
+{
+    min-height: 100vh;
+    width: 100%;
+     background-color: #efeae3;
+}
+
+#sec1{
+    display: flex;
+    align-items: center;
+    gap: 0.5vw;
+    padding: 3vw, 2vw;
+}
+#mol{
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+    background-color: #fe330a;
+     margin-left: 1.5vw;
+         margin-bottom: 3vw;
+
+  
+}
+
+#sec1 p {
+    display: block;
+    font-weight: 200;
+    margin-bottom: 3vw;
+  
+}
+
+
+    .elem{
+        height: 150px;
+        width: 100%;
+        position: relative;
+        background-color: red;
+    }
