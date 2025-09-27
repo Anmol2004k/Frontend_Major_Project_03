@@ -31,10 +31,12 @@ body {
     height: 100%;
     width: 100%;
 }
-#main{
+
+#main {
     /* background-color: black; */
     z-index: 100;
 }
+
 #page1 {
     min-height: 100vh;
     width: 100%;
@@ -384,33 +386,34 @@ to {
     overflow: hidden;
 }
 
-.elem h2{
+.elem h2 {
     font-size: 3vw;
     font-weight: 700;
     position: relative;
     z-index: 99;
 
 }
-.elem .overly{
-  
+
+.elem .overly {
+
     height: 100%;
     width: 100%;
-    background-color: orange;
+    /* background-color: orange; */
     position: absolute;
     left: 0;
     top: -100%;
-    transition: all ease 0.2s;    
+    transition: all ease 0.2s;
 }
 
-.elem:hover .overly{
-    top: 0;     
+.elem:hover .overly {
+    top: 0;
 }
 
- 
-#fixed-img{
+
+#fixed-img {
     height: 29vw;
     width: 24vw;
-     
+
     border-radius: 10px;
     position: fixed;
     z-index: 99;
@@ -423,46 +426,45 @@ to {
 }
 
 #page4 {
-    min-height: 70vh;
+    min-height: 60vh;
     width: 100%;
-    background-color: #b46901;
-    padding:  8vw 2vw;
-   
+    background-color: #efeae3;
+    padding: 10vw 2vw;
+
 }
- .swiper {
-      width: 100%;
-      height: 100%;
-    }
+.swiper {
+    width: 100%;
+    height: 80%;
+    cursor: grab;
 
-    .swiper-slide {
-      text-align: center;
-      font-size: 18px;
-      background: #ffffff;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
+}
+.swiper-slide {
+    width: 25%;
+    height: 40vh;
+    border-left: 1px solid #aeadad;
+    padding: 0 2vw;
 
-    .swiper-slide img {
-      display: block;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
+}
 
-    .swiper-slide {
-      width: 30%;
-    }
- 
+.swiper-slide img{
+    margin-bottom: 1.3vw;
+}
+
+.swiper-slide p{
+    font-weight: 200;
+    font-size: 1.08vw;
+     color: #2a2929f4;
+
+}
 
 #page5 {
     min-height: 100vh;
     width: 100%;
     /* background-color: #9d8666; */
- 
+
 }
 
- #footer{
+#footer {
     position: fixed;
     height: 100vh;
     width: 100%;
@@ -472,16 +474,16 @@ to {
     bottom: 0;
     display: flex;
     /* align-items: flex-end; */
-    justify-content:  flex-end;
+    justify-content: flex-end;
     flex-direction: column;
     padding: 0 2.8vw;
- }
+}
 
-  #footer h1{
+#footer h1 {
     font-size: 23vw;
-  }
+}
 
-  #footer-div{
+#footer-div {
     width: 100%;
     height: 80vh;
     z-index: 99;
@@ -489,38 +491,38 @@ to {
     align-items: center;
     justify-content: space-between;
     padding: 3vw;
-  }
+}
 
-  #fo-left{
+#fo-left {
     width: 50%;
-  }
+}
 
-   #fo-left h2{
+#fo-left h2 {
     font-size: 2vw;
     font-weight: 700;
-     
-   }
 
-   #fo-right{
+}
+
+#fo-right {
     width: 30%;
     padding-right: 4vw;
     gap: 1.5vw;
     display: flex;
     flex-direction: column;
-   
-   }
 
-      #fo-right p{
-    
-       font-family: 'Times New Roman', Times, serif;
-        font-size: 1.3vw;
-        margin-bottom: 1vw;
-        font-weight: 100;
-        letter-spacing: 2px;
-   }
+}
 
-      #fo-right h6{
-       
+#fo-right p {
+
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.3vw;
+    margin-bottom: 1vw;
+    font-weight: 100;
+    letter-spacing: 2px;
+}
+
+#fo-right h6 {
+
 
     font-size: 1.2vw;
     font-weight: 200;
@@ -528,9 +530,10 @@ to {
     border-bottom: 1px solid #d3cdc1df;
     color: #d3cdc1df;
 
-    
-   }
-  #footer-bottom{
+
+}
+
+#footer-bottom {
     border-top: 1px solid #848484ca;
     height: 20vh;
     width: 100%;
@@ -538,16 +541,16 @@ to {
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
-  }
+}
 
-    #footer-bottom h5{
-        font-weight: 200;
-        font-size: 1vw;
-        font-size: 1.1vw;
-        
-    } 
-        
-    #footer #shape1{
+#footer-bottom h5 {
+    font-weight: 200;
+    font-size: 1vw;
+    font-size: 1.1vw;
+
+}
+
+#footer #shape1 {
     position: absolute;
     background-color: #fe330a;
     filter: blur(50px);
@@ -562,7 +565,8 @@ to {
     animation-direction: alternate;
     z-index: -1;
 }
-#footer #shape2{
+
+#footer #shape2 {
     position: absolute;
     background-color: #fe330a;
     filter: blur(50px);
@@ -577,19 +581,23 @@ to {
     animation-direction: alternate;
     z-index: -1;
 }
+
 @keyframes shape1 {
-    from{
+    from {
         transform: rotate(-10deg);
     }
-    to{
+
+    to {
         transform: rotate(-20deg);
     }
 }
+
 @keyframes shape2 {
-    from{
+    from {
         transform: rotate(30deg);
     }
-    to{
+
+    to {
         transform: rotate(45deg);
     }
 }
